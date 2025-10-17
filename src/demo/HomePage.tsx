@@ -19,7 +19,7 @@ const prototypes: PrototypeCard[] = [
   },
 ]
 
-const getPreviewColor = () => {
+const getPreviewColor = (_index: number) => {
   return 'bg-brand-midnight'
 }
 

@@ -1,5 +1,4 @@
 import type { ComponentRoute } from './ComponentViewer'
-import { Button } from '@/components/ui/button'
 import figmaColors from '@/foundations/colors/figma-colors.json'
 import { TypographyTest } from './TypographyTest'
 import { ButtonDemo as ButtonDemoComponent } from './ButtonDemo'
