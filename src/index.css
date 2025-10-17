@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base colors */
+    --background: 0 0% 100%; /* White */
+    --foreground: 180 90% 9%; /* Slate 900 - #01272E */
+
+    /* Card */
+    --card: 0 0% 100%;
+    --card-foreground: 180 90% 9%;
+
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 180 90% 9%;
+
+    /* Brand colors */
+    --primary: 159 70% 32%; /* Grass - #1E8754 */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 191 100% 11%; /* Midnight - #003139 */
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted */
+    --muted: 180 13% 88%; /* Slate 300 - #DFE3E4 */
+    --muted-foreground: 184 11% 44%; /* Slate 600 - #657A7E */
+
+    /* Accent */
+    --accent: 197 100% 35%; /* Action/Lake - #007CB2 */
+    --accent-foreground: 0 0% 100%;
+
+    /* Destructive */
+    --destructive: 6 60% 50%; /* Error - #C64838 */
+    --destructive-foreground: 0 0% 100%;
+
+    /* Success */
+    --success: 159 70% 32%; /* Success - #1E8754 */
+    --success-foreground: 0 0% 100%;
+
+    /* Warning */
+    --warning: 48 100% 69%; /* Warning - #FFD861 */
+    --warning-foreground: 180 90% 9%;
+
+    /* Border & Input */
+    --border: 180 10% 79%; /* Slate 400 - #C1C9CB */
+    --input: 180 10% 79%;
+    --ring: 159 70% 32%; /* Primary */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 180 90% 9%; /* Slate 900 */
+    --foreground: 180 9% 97%; /* Slate 100 - #F8F9F9 */
+
+    --card: 186 21% 16%; /* Slate 800 - #244348 */
+    --card-foreground: 180 9% 97%;
+
+    --popover: 186 21% 16%;
+    --popover-foreground: 180 9% 97%;
+
+    --primary: 159 70% 32%; /* Grass */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 184 22% 22%; /* Slate 700 - #385459 */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 184 22% 22%;
+    --muted-foreground: 180 12% 64%; /* Slate 500 - #96A5A8 */
+
+    --accent: 197 100% 35%; /* Action/Lake */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 6 60% 50%; /* Error */
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 159 70% 32%; /* Success */
+    --success-foreground: 0 0% 100%;
+
+    --warning: 48 100% 69%; /* Warning */
+    --warning-foreground: 180 90% 9%;
+
+    --border: 184 22% 22%;
+    --input: 184 22% 22%;
+    --ring: 180 12% 64%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
